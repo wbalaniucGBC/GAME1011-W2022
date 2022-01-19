@@ -14,12 +14,16 @@ private:
 public:
 	Person()
 	{
-		cout << "Person Constructor Called!";
-		setName("");
+		cout << "Person Constructor Called!" << endl;
+ 		setName("");
 	}
 	Person(const string& name)
 	{
 		setName(name);
+	}
+	~Person()
+	{
+		cout << "Person Destructor Called!" << endl;
 	}
 	void setName(const string& name)
 	{
@@ -37,6 +41,14 @@ private:
 	Discipline major;
 	Person* advisor;
 public:
+	Student()
+	{
+		cout << "Student Constructor Called!" << endl;
+	}
+	~Student()
+	{
+		cout << "Student Destructor Called!" << endl;
+	}
 	void setMajor(Discipline major)
 	{
 		this->major = major;
@@ -60,6 +72,14 @@ class Faculty : public Person
 private:
 	Discipline department;
 public:
+	Faculty()
+	{
+		cout << "Faculty Constructor Called!" << endl;
+	}
+	~Faculty()
+	{
+		cout << "Faculty Destructor Called!" << endl;
+	}
 	void setDepartment(Discipline department)
 	{
 		this->department = department;
