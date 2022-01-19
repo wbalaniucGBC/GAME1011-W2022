@@ -29,3 +29,42 @@ public:
 		return name;
 	}
 };
+
+class Student : public Person
+{
+private:
+	Discipline major;
+	Person* advisor;
+public:
+	void setMajor(Discipline major)
+	{
+		this->major = major;
+	}
+	Discipline getMajor()
+	{
+		return major;
+	}
+	void setAdvisor(Person* advisor)
+	{
+		this->advisor = advisor;
+	}
+	Person* getAdvisor()
+	{
+		return advisor;
+	}
+};
+
+class Faculty : public Person
+{
+private:
+	Discipline department;
+public:
+	void setDepartment(Discipline department)
+	{
+		this->department = department;
+	}
+	Discipline getDepartment()
+	{
+		return department;
+	}
+};

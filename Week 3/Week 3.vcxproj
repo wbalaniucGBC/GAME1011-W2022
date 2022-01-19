@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClInclude Include="Inheritance.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InheritanceTest.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
