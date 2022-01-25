@@ -142,6 +142,7 @@
     <ClInclude Include="Inheritance.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractClassTest.cpp" />
     <ClCompile Include="PolymorphismTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
