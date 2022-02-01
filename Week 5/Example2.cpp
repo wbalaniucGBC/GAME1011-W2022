@@ -17,14 +17,14 @@ T minimum(T arr[], int size)
 	return smallest;
 }
 
-int main()
-{
-	int arr1[] = { 40, 20, 25, 50, 10 };
-	// Call a function "minimum(arr, size)"
-	cout << "The minimum number is " << minimum(arr1, 5) << endl;
-
-	string arr2[] = { "Wallace", "Bob", "Jane", "Anna", "Andy" };
-	cout << "The minimum string is " << minimum(arr2, 5) << endl;
-
-	return 0;
-}
+//int main()
+//{
+//	int arr1[] = { 40, 20, 25, 50, 10 };
+//	// Call a function "minimum(arr, size)"
+//	cout << "The minimum number is " << minimum(arr1, 5) << endl;
+//
+//	string arr2[] = { "Wallace", "Bob", "Jane", "Anna", "Andy" };
+//	cout << "The minimum string is " << minimum(arr2, 5) << endl;
+//
+//	return 0;
+//}
