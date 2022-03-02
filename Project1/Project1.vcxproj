@@ -18,11 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Downloads\GAME1011-W2022-master (1)\GAME1011-W2022-master\Lab 2\Main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{368ebd36-69f1-4e96-bdc2-e3437995fe18}</ProjectGuid>
-    <RootNamespace>Week9</RootNamespace>
+    <ProjectGuid>{72ab2e0a-4952-4b7b-a66e-792a9092c8cd}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,13 +141,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Example1.cpp" />
-    <ClCompile Include="Example2.cpp" />
-    <ClCompile Include="Example3.cpp" />
-    <ClCompile Include="Example4.cpp" />
-    <ClCompile Include="Example5.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
