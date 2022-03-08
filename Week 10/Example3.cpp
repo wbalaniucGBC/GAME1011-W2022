@@ -5,16 +5,16 @@ using namespace std;
 // Function prototype
 unsigned long long int factorial(unsigned long long int);
 
-int main()
-{
-	long long int number;
-
-	cout << "Enter an integer value and I will display its factorial: ";
-	cin >> number;
-	cout << "The factorial of " << number << " is " << factorial(number) << endl;
-
-	return 0;
-}
+//int main()
+//{
+//	long long int number;
+//
+//	cout << "Enter an integer value and I will display its factorial: ";
+//	cin >> number;
+//	cout << "The factorial of " << number << " is " << factorial(number) << endl;
+//
+//	return 0;
+//}
 
 /*
 	Factorial
