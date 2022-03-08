@@ -6,20 +6,20 @@ using namespace std;
 // Function prototype
 int frequency(char, string, int);
 
-int main()
-{
-	string inputString;
-	char ch;
-
-	cout << "Enter in a string of your choice: " << endl;
-	getline(cin, inputString);
-	cout << "Enter a character you want to determine the frequency of in the string: ";
-	cin >> ch;
-
-	cout << "The letter e appears " << frequency(ch, inputString, 0) << " times.\n";
-
-	return 0;
-}
+//int main()
+//{
+//	string inputString;
+//	char ch;
+//
+//	cout << "Enter in a string of your choice: " << endl;
+//	getline(cin, inputString);
+//	cout << "Enter a character you want to determine the frequency of in the string: ";
+//	cin >> ch;
+//
+//	cout << "The letter e appears " << frequency(ch, inputString, 0) << " times.\n";
+//
+//	return 0;
+//}
 
 int frequency(char ch, string inputString, int position)
 {
