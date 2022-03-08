@@ -4,25 +4,25 @@ using namespace std;
 
 int fib(int);
 
-int main()
-{
-	int fibNum;
-
-	cout << "Enter which Fibonacci number you want: ";
-	cin >> fibNum;
-
-	cout << "Fibonacci number " << fibNum << " is " << fib(fibNum) << endl;
-
-	//cout << "The first 20 Fibonacci numbers are: \n";
-	//for (int i = 0; i < 20; i++)
-	//{
-	//	cout << fib(i) << " ";
-	//}
-
-	cout << endl;
-
-	return 0;
-}
+//int main()
+//{
+//	int fibNum;
+//
+//	cout << "Enter which Fibonacci number you want: ";
+//	cin >> fibNum;
+//
+//	cout << "Fibonacci number " << fibNum << " is " << fib(fibNum) << endl;
+//
+//	//cout << "The first 20 Fibonacci numbers are: \n";
+//	//for (int i = 0; i < 20; i++)
+//	//{
+//	//	cout << fib(i) << " ";
+//	//}
+//
+//	cout << endl;
+//
+//	return 0;
+//}
 
 /*
 	Fibonacci
