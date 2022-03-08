@@ -5,32 +5,32 @@ using namespace std;
 // Function prototype
 int binarySearch(const int array[], int first, int last, int value);
 
-int main()
-{
-	const int SIZE = 20;
-
-	int tests[SIZE] = { 101, 142, 147, 189, 199, 207, 222,
-						234, 289, 296, 310, 319, 388, 394,
-						417, 429, 447, 521, 536, 600 };
-	int result;	// Result of the search (subscript)
-	int empID;	// What to search for
-
-	cout << "Enter an ID you wish to search for: ";
-	cin >> empID;
-	result = binarySearch(tests, 0, SIZE - 1, empID);
-
-	if (result == -1)
-	{
-		cout << "That number does not exist in the array.\n";
-	}
-	else
-	{
-		// Number does exist!
-		cout << "That ID is found at element: " << result << " in the array\n";
-	}
-
-	return 0;
-}
+//int main()
+//{
+//	const int SIZE = 20;
+//
+//	int tests[SIZE] = { 101, 142, 147, 189, 199, 207, 222,
+//						234, 289, 296, 310, 319, 388, 394,
+//						417, 429, 447, 521, 536, 600 };
+//	int result;	// Result of the search (subscript)
+//	int empID;	// What to search for
+//
+//	cout << "Enter an ID you wish to search for: ";
+//	cin >> empID;
+//	result = binarySearch(tests, 0, SIZE - 1, empID);
+//
+//	if (result == -1)
+//	{
+//		cout << "That number does not exist in the array.\n";
+//	}
+//	else
+//	{
+//		// Number does exist!
+//		cout << "That ID is found at element: " << result << " in the array\n";
+//	}
+//
+//	return 0;
+//}
 
 /*
 	Binary Search
