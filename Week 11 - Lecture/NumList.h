@@ -8,32 +8,26 @@ protected:
 	// Represent one node
 	struct ListNode
 	{
-		// Each node has a value and a pointer to another node (maybe)
+		// Each node has a value and a pointer to (possibly) another node
 		double value;
 		ListNode* next;
 
+		// Constructor
 		ListNode(double value1, ListNode* next1 = nullptr)
 		{
 			value = value1;
 			next = next1;
 		}
 	};
-
-	// Represent the beginning of the linked list
+	// Represent the beginning of our linked list
 	ListNode* head;
-
 public:
-	// Constructor
 	NumList()
 	{
-		// Initialize and empty linked list
-		head = nullptr;
+		// Initializes an empty linked list
+		head = NULL;
 	}
-
-	// Destructor
 	~NumList();
-
-	// Member Functions
 	void add(double number);
 	void displayList() const;
 };
