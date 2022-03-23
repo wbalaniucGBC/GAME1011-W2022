@@ -139,10 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DynIntQueue.h" />
+    <ClInclude Include="DynIntStack.h" />
+    <ClInclude Include="IntQueue.h" />
     <ClInclude Include="IntStack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DynIntQueue.cpp" />
+    <ClCompile Include="DynIntStack.cpp" />
     <ClCompile Include="Example1.cpp" />
+    <ClCompile Include="Example2.cpp" />
+    <ClCompile Include="Example3.cpp" />
+    <ClCompile Include="Example4.cpp" />
+    <ClCompile Include="IntQueue.cpp" />
     <ClCompile Include="IntStack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
