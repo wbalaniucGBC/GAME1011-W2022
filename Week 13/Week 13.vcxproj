@@ -20,6 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Example1.cpp" />
+    <ClCompile Include="Example2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IntRange.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
