@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-	const int LOWER_BOUND = 5;
-	const int UPPER_BOUND = 10;
+	const int LOWER_BOUND = 2;
+	const int UPPER_BOUND = 15;
 	IntRange range(LOWER_BOUND, UPPER_BOUND);
 	int userValue;
 
@@ -16,9 +16,13 @@ int main()
 		userValue = range.getUserInput();
 		cout << "You entered: " << userValue << endl;
 	}
-	catch (IntRange::OutOfRange)
+	catch (IntRange::TooLow)
 	{
-		cout << "That value is out of range.\n";
+		cout << "That value is too low!\n";
+	}
+	catch (IntRange::TooHigh)
+	{
+		cout << "That value is too high!\n";
 	}
 
 	cout << "End of program!\n";

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\GAME1011-W2022-master (1)\GAME1011-W2022-master\Lab 2\Main.cpp">
+    <ClCompile Include="Lab4_Starter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

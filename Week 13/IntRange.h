@@ -10,7 +10,8 @@ private:
 	int upper;	// Upper bound
 public:
 	// Exception class
-	class OutOfRange {};	// Empty class declaration
+	class TooLow {};
+	class TooHigh {};
 
 	// Member functions
 	IntRange(int low, int high)
@@ -27,10 +28,15 @@ public:
 	int getUserInput()
 	{
 		cin >> input;
-		if (input < getLower() || input > getUpper())
+		if (input < getLower())
 		{
-			throw OutOfRange();
+			throw TooLow();
 		}
+		else if (input > getUpper())
+		{
+			throw TooHigh();
+		}
+
 		return input;
 	}
 };
