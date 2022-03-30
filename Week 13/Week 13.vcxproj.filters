@@ -21,6 +21,9 @@
     <ClCompile Include="Example2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Example3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntRange.h">
