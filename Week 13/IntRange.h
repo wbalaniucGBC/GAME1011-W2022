@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string>
 using namespace std;
 
 class IntRange
@@ -10,8 +11,38 @@ private:
 	int upper;	// Upper bound
 public:
 	// Exception class
-	class TooLow {};
-	class TooHigh {};
+	class TooLow 
+	{
+	private:
+		int value;
+	public:
+		TooLow(int i)
+		{
+			setValue(i);
+		}
+		void setValue(int i) { value = i; }
+		int getValue() const { return value; }
+		void exceptionMessage()
+		{
+			cout << "The value " << getValue() << " is too low.\n";
+		}
+	};
+	class TooHigh 
+	{
+	private:
+		int value;
+	public:
+		TooHigh(int i)
+		{
+			setValue(i);
+		}
+		void setValue(int i) { value = i; }
+		int getValue() const { return value; }
+		void exceptionMessage()
+		{
+			cout << "The value " << getValue() << " is too high.\n";
+		}
+	};
 
 	// Member functions
 	IntRange(int low, int high)
@@ -22,19 +53,19 @@ public:
 	}
 	void setLower(int l) { lower = l; }
 	void setUpper(int u) { upper = u; }
-	int getLower() { return lower; }
-	int getUpper() { return upper; }
+	int getLower() const { return lower; }
+	int getUpper() const { return upper; }
 
 	int getUserInput()
 	{
 		cin >> input;
 		if (input < getLower())
 		{
-			throw TooLow();
+			throw TooLow(input);
 		}
 		else if (input > getUpper())
 		{
-			throw TooHigh();
+			throw TooHigh(input);
 		}
 
 		return input;

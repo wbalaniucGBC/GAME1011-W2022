@@ -16,13 +16,13 @@ int main()
 		userValue = range.getUserInput();
 		cout << "You entered: " << userValue << endl;
 	}
-	catch (IntRange::TooLow)
+	catch (IntRange::TooLow e)
 	{
-		cout << "That value is too low!\n";
+		e.exceptionMessage();
 	}
-	catch (IntRange::TooHigh)
+	catch (IntRange::TooHigh ex)
 	{
-		cout << "That value is too high!\n";
+		ex.exceptionMessage();
 	}
 
 	cout << "End of program!\n";
